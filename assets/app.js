@@ -119,7 +119,7 @@ function renderSources(){
   for(const s of ordered){
     const inspected=s.inspection.startsWith('README');
     const card=add(grid,'article',{class:'source-card'});
-    const head=add(card,'div',{class:'source-row'});add(head,'span',{class:'eyebrow'},s.id);head.append(statusChip(inspected?'candidate':'placeholder'));
+    const head=add(card,'div',{class:'source-row'});add(head,'span',{class:'eyebrow'},s.id);add(head,'span',{class:'status-chip '+(inspected?'established':'placeholder')},inspected?'README INSPECTED':'QUEUED');
     add(card,'h3',{},s.repository);add(card,'p',{},s.inspection);
     const foot=add(card,'div',{class:'source-row'});
     const a=add(foot,'a',{href:s.url,target:'_blank',rel:'noopener noreferrer'},'Inspect source ↗');
@@ -127,6 +127,29 @@ function renderSources(){
     add(foot,'span',{class:'pin'},'UNPINNED');
   }
 }
+
+function renderQuantities(){
+  const grid=$('quantity-grid');grid.replaceChildren();
+  for(const q of state.data.quantities){
+    const item=add(grid,'div',{class:'quantity-item'});
+    add(item,'strong',{},q.symbol);add(item,'code',{},q.si);
+  }
+}
+function renderFindings(){
+  const d=state.data;const q=normalize($('ledger-search').value);const target=$('ledger-outcome').value;
+  const entries=d.findings.filter(f=>(target==='all'||f.outcome===target)&&normalize([f.gate,f.target,f.detail,f.outcome].join(' ')).includes(q));
+  $('ledger-count').textContent=entries.length+' / '+d.findings.length+' FINDINGS';
+  const grid=$('ledger-list');grid.replaceChildren();
+  entries.forEach(f=>{
+    const row=add(grid,'article',{class:'finding-row'});
+    const first=add(row,'div',{class:'finding-head'});
+    add(first,'span',{class:'finding-target'},f.target);first.append(statusChip(f.outcome));
+    add(row,'p',{},f.detail);
+    add(row,'span',{class:'finding-gate'},f.gate);
+  });
+  if(!entries.length)add(grid,'p',{class:'empty'},'No findings match this search.');
+}
+
 function openOntology(id){
   const d=state.data,o=d?.ontologies.find(x=>x.id===id);if(!o)return;
   $('dialog-kicker').textContent=o.id.toUpperCase();
@@ -171,7 +194,7 @@ async function init(){
     const count=x=>data.findings.filter(f=>f.outcome===x).length;
     if(count('PASS')!==data.counts.PASS||count('FAIL')!==data.counts.FAIL||count('UNRESOLVED')!==data.counts.UNRESOLVED)throw Error('Evidence counts disagree with findings');
     state.data=data;
-    renderStats();renderAtlas();renderEquations();renderBridges();renderObligations();renderSources();
+    renderStats();renderAtlas();renderEquations();renderBridges();renderObligations();renderSources();renderQuantities();renderFindings();
     $('atlas-search').addEventListener('input',e=>{state.atlasQuery=e.target.value;renderAtlas();});
     document.querySelectorAll('[data-atlas-filter]').forEach(btn=>btn.addEventListener('click',()=>{
       state.atlasFilter=btn.dataset.atlasFilter;
@@ -181,6 +204,8 @@ async function init(){
     $('equation-search').addEventListener('input',e=>{state.equationQuery=e.target.value;renderEquations();});
     $('equation-gate').addEventListener('change',e=>{state.equationGate=e.target.value;renderEquations();});
     $('download-csv').addEventListener('click',exportCsv);
+    $('ledger-search').addEventListener('input',renderFindings);
+    $('ledger-outcome').addEventListener('change',renderFindings);
     $('download-json').addEventListener('click',()=>download('observe-unity-moc-001-snapshot.json',JSON.stringify(data,null,2)+'\n','application/json'));
     document.querySelectorAll('.bridge-edge').forEach(el=>{
       el.addEventListener('click',()=>selectBridge(el.dataset.bridge));

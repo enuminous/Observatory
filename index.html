@@ -100,6 +100,7 @@
           <button class="text-action" id="download-csv" type="button">Export equation CSV <span aria-hidden="true">↧</span></button>
         </div>
         <div class="equation-grid" id="equation-grid" aria-live="polite"><p class="loading">Loading equation manifest…</p></div>
+        <div class="quantity-panel"><div class="quantity-head"><div><p class="eyebrow">TYPED SYMBOL REGISTRY</p><h3>Seventeen quantities. Explicit dimensions.</h3><p>SI exponents are metadata, not proof that physical laws hold.</p></div><span class="section-count">17 SYMBOLS</span></div><div id="quantity-grid" class="quantity-grid" aria-live="polite"></div></div>
       </div>
     </section>
 
@@ -157,6 +158,12 @@
             </div>
           </div>
           <div class="obligation-card"><div class="evidence-card-head"><h3>Research obligations</h3><span>9 OPEN</span></div><div id="obligation-list" class="obligation-list" aria-live="polite"><p class="loading">Loading obligations…</p></div></div>
+        </div>
+
+        <div class="ledger-panel" id="ledger">
+          <div class="ledger-header"><div><p class="eyebrow">FULL STATIC LEDGER</p><h3>Every recorded gate finding.</h3><p>Exactly 40 results from the frozen browser snapshot, including unresolved sources and research obligations.</p></div><span class="section-count" id="ledger-count">40 FINDINGS</span></div>
+          <div class="toolbar"><label class="search-wrap"><span class="sr-only">Search gate findings</span><span aria-hidden="true">⌕</span><input type="search" id="ledger-search" placeholder="Target, gate, finding…" autocomplete="off"></label><label class="select-wrap">OUTCOME <select id="ledger-outcome"><option value="all">All outcomes</option><option value="PASS">PASS</option><option value="FAIL">FAIL</option><option value="UNRESOLVED">UNRESOLVED</option></select></label></div>
+          <div id="ledger-list" class="ledger-list" aria-live="polite"></div>
         </div>
         <div class="method-strip"><span class="method-label">CONTROLLED CLAIM LEVELS</span><span>Structural check</span><b>≠</b><span>Mathematical proof</span><b>≠</b><span>Physical prediction</span><b>≠</b><span>Replication</span></div>
       </div>
