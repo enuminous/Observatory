@@ -38,6 +38,10 @@ function renderStats(){
   const d=state.data;
   $('stat-sectors').textContent=d.ontologies.length;
   $('stat-pass').textContent=d.counts.PASS;
+  $('stat-total').textContent=d.findings.length;
+  $('stat-equation-pass').textContent=d.evidence_scope.dimensional_pass_equation_records;
+  $('stat-equation-total').textContent=d.equations.length;
+  $('stat-efmw-pass').textContent=d.evidence_scope.efmw_specific_pass;
   $('stat-fail').textContent=d.counts.FAIL;
   $('stat-unresolved').textContent=d.counts.UNRESOLVED;
   for(const name of ['PASS','FAIL','UNRESOLVED']){const el=$('gate-'+name.toLowerCase());if(el)el.textContent=d.counts[name];}
@@ -103,13 +107,15 @@ function selectBridge(id){
 }
 function renderObligations(){
   const d=state.data;const list=$('obligation-list');list.replaceChildren();
-  for(const o of d.obligations){
-    const details=add(list,'details',{class:'obligation'});
+  const queue=[...d.obligations].sort((a,b)=>(a.queue_rank??999)-(b.queue_rank??999));
+  for(const o of queue){
+    const details=add(list,'details',{class:'obligation'+(o.id==='ob_pin_sources'?' priority':'')});
+    if(o.id==='ob_pin_sources')details.open=true;
     const summary=add(details,'summary');const left=add(summary,'div');
-    add(left,'span',{class:'ob-id'},o.id);add(left,'span',{class:'ob-question'},o.question);
+    add(left,'span',{class:'ob-id'},(o.id==='ob_pin_sources'?'PRIORITY 01 · ':'')+o.id);add(left,'span',{class:'ob-question'},o.question);
     add(summary,'span',{class:'plus','aria-hidden':'true'},'+');
     const ex=add(details,'div',{class:'ob-expanded'});
-    add(ex,'p',{},'Required before resolution: frozen source, explicit derivation or executable test, a conventional or null control, reproducible evidence, and a scope-specific adjudication.');
+    add(ex,'p',{},o.priority_reason||'Required before resolution: frozen source, explicit derivation or executable test, a conventional or null control, reproducible evidence, and a scope-specific adjudication.');
     const p=add(ex,'p');add(p,'code',{},'Target: '+o.target);
   }
 }
@@ -193,6 +199,7 @@ async function init(){
     if(!Array.isArray(data.ontologies)||!Array.isArray(data.equations)||!Array.isArray(data.findings))throw Error('Invalid data structure');
     const count=x=>data.findings.filter(f=>f.outcome===x).length;
     if(count('PASS')!==data.counts.PASS||count('FAIL')!==data.counts.FAIL||count('UNRESOLVED')!==data.counts.UNRESOLVED)throw Error('Evidence counts disagree with findings');
+    if(data.evidence_scope.total_gate_findings!==data.findings.length||data.evidence_scope.dimensional_pass_equation_records!==data.equations.filter(e=>e.dimensionGate==='PASS').length||data.evidence_scope.efmw_specific_pass!==0)throw Error('Evidence scope disagrees with snapshot');
     state.data=data;
     renderStats();renderAtlas();renderEquations();renderBridges();renderObligations();renderSources();renderQuantities();renderFindings();
     $('atlas-search').addEventListener('input',e=>{state.atlasQuery=e.target.value;renderAtlas();});

@@ -13,3 +13,9 @@ The four inspected source READMEs are not immutable source freezes. Eight other 
 The first decisive step is to freeze source commits, retain unmodified original equations, adjudicate sign/current/stress mismatches, define correspondence maps, establish operational observables with null comparators, and obtain external evidence. Source conflicts remain UNRESOLVED until independently adjudicated.
 
 For full criteria read the [Unity Appendix](https://github.com/enuminous/papers/blob/main/research/moc-001/UNITY_APPENDIX.md).
+
+## Proportion-first reporting correction (2026-11-08)
+
+The correct denominators are **5 / 40 structural gate findings** and **4 / 22 equation records with dimensional PASS**. Among the four equation examples, two are established reference equations and two are illustrative expressions; the fifth PASS belongs to the static registry check, not an equation. There are **0 EFMW-specific PASS**. Calling these five validated reference equations, or reporting 5 / 22 as a homogeneous fraction, would misstate the evidence.
+
+The first queue item is `ob_pin_sources`. It is a prerequisite for substantive cross-ontology imports, not a certificate that source pins have been completed.

@@ -28,7 +28,7 @@ The site needs no package installation, external JavaScript, login, fonts, API k
 - Typed quantity registry: 17 quantities with SI dimensions.
 - Selectable diagram of 4 **unresolved** ontology interfaces. It is a schematic, not a proof graph.
 - 40 finding ledger with outcome filters, 9 unresolved research obligations, and 12 source entries.
-- Scientific status dashboard: 5 bounded PASS, 0 FAIL, and 35 UNRESOLVED.
+- Scientific status dashboard: **5 / 40 gate findings PASS**; **4 / 22 equation records** have dimensional PASS (2 established reference examples, 2 illustrative expressions), plus 1 registry PASS; **0 EFMW-specific PASS**, 0 FAIL and 35 UNRESOLVED.
 - Unity conditions U1–U3, canonical paper and Unity appendix links.
 - Downloadable browser snapshot in `data/catalog.json` and source/provenance notes.
 - Responsive, keyboard-accessible static HTML/CSS/JavaScript; no external runtime dependencies.
@@ -38,12 +38,15 @@ The site needs no package installation, external JavaScript, login, fonts, API k
 | Observed in local MOC-001 scaffold | Result | Limitation |
 |---|---|---|
 | Python unit tests | 16/16 PASS | Local software checks; not a physical result |
-| Static compiler findings | 5 PASS | Four SI-dimensional agreements and one registry check |
+| Static compiler findings | 5 / 40 PASS | Four SI-dimensional agreements (2 established reference, 2 illustrative) and one registry check; 0 EFMW-specific PASS |
 | Static FAIL | 0 | Zero only for the checks executed |
+| Equation records | 4 / 22 dimensional PASS | 18 other equation records UNRESOLVED; none of these four is an EFMW-specific physical validation |
 | UNRESOLVED | 35 | 18 equation checks, 4 bridges, 9 obligations, 4 source pins |
 | Lean kernel replay | Not executed | No formal theorem replay claimed |
 | Upstream original source equations | Not fully imported | Current browser registry is a curated snapshot |
 | External physical experiment | None | No unified physical mechanism established |
+
+**Next required action is `ob_pin_sources` (priority 01):** freeze exact commits and original file hashes before importing equations or resolving interfaces. The queue opens on this obligation.
 
 The four README-inspected sources are Geometry, Information-Tensor, EFMW-Lagrangian, and Standard-Model-Reduction. The other eight source URLs are queued, not ingested. No source commit is frozen in this browser snapshot.
 

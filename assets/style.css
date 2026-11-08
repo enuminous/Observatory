@@ -303,3 +303,16 @@ input[type=search]::placeholder{color:#729294}
 @media(max-width:1120px){.quantity-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:860px){.quantity-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:580px){.quantity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.quantity-head,.ledger-header{display:block}.ledger-header .section-count,.quantity-head .section-count{margin-top:12px}.ledger-panel{padding:16px}}
+
+/* Proportion-first scientific evidence disclosure (2026-11-08) */
+.stat-tile-evidence strong{font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat-tile-evidence .stat-denominator{font-size:.55em;color:#b1cbc5;font-weight:400;letter-spacing:-.035em}
+.stat-tile-evidence .stat-sub{line-height:1.55}
+.stat-tile-evidence .stat-zero{display:block;margin-top:9px;font:600 11px var(--mono);color:var(--amber)}
+.evidence-footnote strong{font-weight:600;color:#d9e9df}
+.queue-intro{border-left:2px solid var(--teal-strong);padding:3px 11px;margin:0 0 15px;font-size:11px;line-height:1.7;color:#a5c6bf;background:transparent}
+.queue-intro strong{display:block;color:var(--teal);font-family:var(--mono);font-size:10px;overflow-wrap:anywhere}
+.queue-intro code{font-size:10px}
+.obligation.priority{border-color:#438578}
+.obligation.priority .ob-id{color:var(--teal)}
+@media(max-width:580px){.stat-tile-evidence strong{font-size:35px}.queue-intro{padding-left:9px}}

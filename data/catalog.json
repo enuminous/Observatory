@@ -477,58 +477,68 @@
   ],
   "obligations": [
     {
+      "id": "ob_pin_sources",
+      "question": "Freeze upstream SHAs and import exact source expressions without silent relabeling.",
+      "target": "ont_master_action",
+      "status": "UNRESOLVED",
+      "queue_rank": 1,
+      "priority_reason": "Dependency gate: freeze authoritative repository commits, exact source equations and original file hashes before relying on any candidate bridge or unified import."
+    },
+    {
       "id": "ob_efmw_gauge",
       "question": "Derive or reject unmatched gauge currents from one explicitly fixed action.",
       "target": "ont_efmw_lagrangian",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 2
     },
     {
       "id": "ob_efmw_gravity",
       "question": "Supply metric variation and full stress identification; test conservation identities.",
       "target": "ont_efmw_lagrangian",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 3
     },
     {
       "id": "ob_efmw_scalar_sign",
       "question": "Resolve source sign mismatch against differentiated candidate potentials.",
       "target": "ont_efmw_lagrangian",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 4
     },
     {
       "id": "ob_g3",
       "question": "Distinguish κI = 0 from nonzero using a measurable observable and preregistered nulls.",
       "target": "ont_classical_gravity",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 5
     },
     {
       "id": "ob_info_energy",
       "question": "Reconcile information tensor energy with storage, work and dissipation.",
       "target": "ont_informational_dynamics",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 6
     },
     {
       "id": "ob_observer_predictions",
       "question": "Define identifiable observables, uncertainties, nulls and independent replication.",
       "target": "ont_observer_measurement",
-      "status": "UNRESOLVED"
-    },
-    {
-      "id": "ob_pin_sources",
-      "question": "Freeze upstream SHAs and import exact source expressions without silent relabeling.",
-      "target": "ont_master_action",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 7
     },
     {
       "id": "ob_quantum_gravity",
       "question": "Define a quantum-gravity completion or explicitly state the effective-domain cutoff.",
       "target": "ont_master_action",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 8
     },
     {
       "id": "ob_sm_39strata",
       "question": "Derive or falsify proposed 39-strata geometry against Standard Model observables.",
       "target": "ont_standard_model",
-      "status": "UNRESOLVED"
+      "status": "UNRESOLVED",
+      "queue_rank": 9
     }
   ],
   "sources": [
@@ -931,5 +941,16 @@
   ],
   "paper_url": "https://github.com/enuminous/papers/blob/main/MOC-001-Compiling-Ontologies-Toward-Testable-Unity-of-Physics-2026-11-08.md",
   "unity_appendix_url": "https://github.com/enuminous/papers/blob/main/research/moc-001/UNITY_APPENDIX.md",
-  "source_note": "Curated, loss-aware browser representation of the MOC-001 generated manifest; not an independent recompile; no upstream corpus imported."
+  "source_note": "Curated, loss-aware browser representation of the MOC-001 generated manifest; not an independent recompile; no upstream corpus imported.",
+  "evidence_scope": {
+    "structural_pass_findings": 5,
+    "total_gate_findings": 40,
+    "equation_records": 22,
+    "dimensional_pass_equation_records": 4,
+    "established_reference_dimensional_pass": 2,
+    "illustrative_dimensional_pass": 2,
+    "registry_pass_findings": 1,
+    "efmw_specific_pass": 0,
+    "note": "Five PASS findings are out of 40 gate findings, not five verified equations out of 22. Four of 22 equation records pass only dimensional checks (two established references and two illustrative expressions), plus one registry-static PASS. None proves or verifies an EFMW-specific physical equation."
+  }
 }

@@ -70,11 +70,11 @@
     <section class="container" aria-label="Snapshot numbers">
       <div class="stat-row">
         <div class="stat-tile"><span class="stat-label">ONTOLOGY SECTORS</span><strong id="stat-sectors">22</strong><span class="stat-sub">Registered domains</span></div>
-        <div class="stat-tile"><span class="stat-label">STRUCTURAL PASS</span><strong class="color-good" id="stat-pass">5</strong><span class="stat-sub">Limited compiler gates</span></div>
+        <div class="stat-tile stat-tile-evidence"><span class="stat-label">STRUCTURAL PASS / ALL GATE FINDINGS</span><strong class="color-good"><span id="stat-pass">5</span><span class="stat-denominator"> / <span id="stat-total">40</span></span></strong><span class="stat-sub"><span id="stat-equation-pass">4</span> / <span id="stat-equation-total">22</span> equation records: dimensions only</span><span class="stat-zero"><span id="stat-efmw-pass">0</span> EFMW-specific PASS</span></div>
         <div class="stat-tile"><span class="stat-label">STRUCTURAL FAIL</span><strong id="stat-fail">0</strong><span class="stat-sub">Within executed checks only</span></div>
         <div class="stat-tile"><span class="stat-label">UNRESOLVED</span><strong class="color-warn" id="stat-unresolved">35</strong><span class="stat-sub">Open checks and imports</span></div>
       </div>
-      <div class="scope-notice"><span class="notice-icon" aria-hidden="true">!</span><p><strong>Scientific boundary.</strong> These counts describe one local MOC-001 structural compilation snapshot. They are not measurements of the universe. No EFMW-specific physical effect, unified action, or complete proof has been independently established.</p><a href="#evidence">Read the evidence ↗</a></div>
+      <div class="scope-notice"><span class="notice-icon" aria-hidden="true">!</span><p><strong>Scientific boundary.</strong> Five structural PASS findings are out of 40 gates, not five validated equations out of 22. Four equation records have only dimensional PASS results: <strong>two established reference equations and two illustrative expressions</strong>; the fifth is a registry check. <strong>Zero EFMW-specific PASS.</strong> No physical unification, field equation or independent experiment has been verified.</p><a href="#evidence">Read the evidence ↗</a></div>
     </section>
 
     <section class="section container" id="atlas" aria-labelledby="atlas-title">
@@ -146,7 +146,7 @@
             <div class="evidence-card"><div class="evidence-card-head"><h3>Compiler gate distribution</h3><span>STATIC SNAPSHOT</span></div>
               <div class="bar-stats"><span class="ok" id="bar-pass" style="width:12.5%"></span><span class="bad" id="bar-fail" style="width:0%"></span><span class="open" id="bar-unresolved" style="width:87.5%"></span></div>
               <div class="bar-legend"><span><i class="legend-dot established"></i><b id="gate-pass">5</b> PASS (bounded)</span><span><i class="legend-dot fail"></i><b id="gate-fail">0</b> FAIL</span><span><i class="legend-dot missing"></i><b id="gate-unresolved">35</b> UNRESOLVED</span></div>
-              <p class="evidence-footnote">Passing a dimensional check does not establish covariance, gauge invariance, conservation, truth, or empirically observed effects.</p>
+              <p class="evidence-footnote"><strong id="gate-breakdown">4 / 22 equation records with dimension PASS (2 established reference examples, 2 illustrative expressions); 1 registry PASS; 0 EFMW-specific PASS.</strong> This is 5 / 40 gate findings, not 5 / 22 equations. A dimensional PASS does not establish covariance, conservation, physical truth or observed effects.</p>
             </div>
             <div class="evidence-card">
               <div class="evidence-card-head"><h3>Execution record</h3><span>2026-11-08</span></div>
@@ -157,7 +157,7 @@
               <div class="execution"><span>Independent replication</span><strong class="unverified">NONE</strong></div>
             </div>
           </div>
-          <div class="obligation-card"><div class="evidence-card-head"><h3>Research obligations</h3><span>9 OPEN</span></div><div id="obligation-list" class="obligation-list" aria-live="polite"><p class="loading">Loading obligations…</p></div></div>
+          <div class="obligation-card"><div class="evidence-card-head"><h3>Research obligations</h3><span>9 OPEN · SOURCE PINS FIRST</span></div><p class="queue-intro"><strong>01 / NEXT REQUIRED GATE — <code>ob_pin_sources</code></strong> Freeze exact upstream commits, source equations and file hashes before making cross-theory equivalence claims.</p><div id="obligation-list" class="obligation-list" aria-live="polite"><p class="loading">Loading obligations…</p></div></div>
         </div>
 
         <div class="ledger-panel" id="ledger">
