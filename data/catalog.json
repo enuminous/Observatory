@@ -1,0 +1,935 @@
+{
+  "project": "Observe Unity",
+  "version": "MOC-001",
+  "snapshot_date": "2026-11-08",
+  "snapshot_kind": "documented_local_structural_compile",
+  "claim": "No physical unification established.",
+  "verification": {
+    "tests": "16/16 local Python tests passed; not independently replayed on GitHub",
+    "lean": "not executed",
+    "empirical": "none",
+    "source_freeze": "not performed"
+  },
+  "counts": {
+    "PASS": 5,
+    "FAIL": 0,
+    "UNRESOLVED": 35
+  },
+  "ontologies": [
+    {
+      "id": "ont_black_holes",
+      "name": "Black hole and horizon physics",
+      "status": "placeholder",
+      "scope": "Horizon boundary conditions and semiclassical consistency",
+      "equations": [
+        "eq_black_holes_pending"
+      ]
+    },
+    {
+      "id": "ont_causal_information",
+      "name": "Causal information and stochastic systems",
+      "status": "placeholder",
+      "scope": "Information metrics, causal constraints, stochastic memory",
+      "equations": [
+        "eq_causal_information_pending"
+      ]
+    },
+    {
+      "id": "ont_classical_gravity",
+      "name": "Classical gravity",
+      "status": "established",
+      "scope": "Einstein equation in standard SI conventions; cosmological constant omitted in example",
+      "equations": [
+        "eq_einstein"
+      ]
+    },
+    {
+      "id": "ont_classical_mechanics",
+      "name": "Classical Hamiltonian mechanics",
+      "status": "placeholder",
+      "scope": "Phase-space equations, constraints and observables",
+      "equations": [
+        "eq_classical_mechanics_pending"
+      ]
+    },
+    {
+      "id": "ont_condensed_matter",
+      "name": "Condensed matter / effective phases",
+      "status": "placeholder",
+      "scope": "Emergent excitations, phases and coarse graining",
+      "equations": [
+        "eq_condensed_matter_pending"
+      ]
+    },
+    {
+      "id": "ont_cosmology",
+      "name": "Cosmology",
+      "status": "placeholder",
+      "scope": "Friedmann reference, perturbations and candidate cosmic rotation",
+      "equations": [
+        "eq_cosmology_pending"
+      ]
+    },
+    {
+      "id": "ont_discrete_computational",
+      "name": "Discrete / computational spacetime candidates",
+      "status": "placeholder",
+      "scope": "Discrete maps, continuum limits, lattice observables",
+      "equations": [
+        "eq_discrete_computational_pending"
+      ]
+    },
+    {
+      "id": "ont_efmw_lagrangian",
+      "name": "EFMW Lagrangian candidate",
+      "status": "candidate",
+      "scope": "Frozen candidate C1 and external obligations referenced, not imported",
+      "equations": [
+        "eq_efmw_candidate_unimported"
+      ]
+    },
+    {
+      "id": "ont_electromagnetism",
+      "name": "Electromagnetism",
+      "status": "placeholder",
+      "scope": "Maxwell equations, boundary conditions, gauge freedom",
+      "equations": [
+        "eq_electromagnetism_pending"
+      ]
+    },
+    {
+      "id": "ont_fluid_vorticity",
+      "name": "Fluid and phase-vorticity dynamics",
+      "status": "placeholder",
+      "scope": "Continuity, pressure and vorticity closure",
+      "equations": [
+        "eq_fluid_vorticity_pending"
+      ]
+    },
+    {
+      "id": "ont_informational_dynamics",
+      "name": "Informational dynamics laboratory",
+      "status": "candidate",
+      "scope": "Explicitly constructed simulation and semantic engine, not a known physical law",
+      "equations": [
+        "eq_memory_toy"
+      ]
+    },
+    {
+      "id": "ont_master_action",
+      "name": "Candidate combined action interface",
+      "status": "placeholder",
+      "scope": "Formal organizational sum only, not complete quantum gravity or unified dynamics",
+      "equations": [
+        "eq_master_density"
+      ]
+    },
+    {
+      "id": "ont_measurement_statistics",
+      "name": "Measurement and inference",
+      "status": "placeholder",
+      "scope": "Instruments, uncertainties, data selection, null tests",
+      "equations": [
+        "eq_measurement_statistics_pending"
+      ]
+    },
+    {
+      "id": "ont_observer_measurement",
+      "name": "Observer and measurement interface",
+      "status": "placeholder",
+      "scope": "Future measurement operators, observer assumptions, causal records and empirical readouts",
+      "equations": [
+        "eq_measurement_unimported"
+      ]
+    },
+    {
+      "id": "ont_qft",
+      "name": "Quantum field theory",
+      "status": "placeholder",
+      "scope": "Fields, gauge fixing, renormalization, observables",
+      "equations": [
+        "eq_qft_pending"
+      ]
+    },
+    {
+      "id": "ont_quantum_geometry",
+      "name": "Quantum geometry candidates",
+      "status": "placeholder",
+      "scope": "Nonclassical geometry and reduction limits",
+      "equations": [
+        "eq_quantum_geometry_pending"
+      ]
+    },
+    {
+      "id": "ont_quantum_mechanics",
+      "name": "Quantum mechanics",
+      "status": "placeholder",
+      "scope": "Hilbert spaces, states, observables, unitary evolution",
+      "equations": [
+        "eq_quantum_mechanics_pending"
+      ]
+    },
+    {
+      "id": "ont_relativistic_kinematics",
+      "name": "Relativistic kinematics",
+      "status": "established",
+      "scope": "Special-relativistic mass-shell relation",
+      "equations": [
+        "eq_mass_shell"
+      ]
+    },
+    {
+      "id": "ont_standard_model",
+      "name": "Classical Standard Model",
+      "status": "established",
+      "scope": "Classical SM organization; quantum renormalization and experimental parameter matching out of scope",
+      "equations": [
+        "eq_sm_placeholder"
+      ]
+    },
+    {
+      "id": "ont_stat_mechanics",
+      "name": "Thermodynamics and statistical mechanics",
+      "status": "placeholder",
+      "scope": "Microstate ensembles, entropy, fluctuations",
+      "equations": [
+        "eq_stat_mechanics_pending"
+      ]
+    },
+    {
+      "id": "ont_symplectic_poisson",
+      "name": "Symplectic / Poisson geometry",
+      "status": "placeholder",
+      "scope": "Poisson brackets, symplectic forms, canonical transformations",
+      "equations": [
+        "eq_symplectic_poisson_pending"
+      ]
+    },
+    {
+      "id": "ont_topological_structure",
+      "name": "Topology and geometry interface",
+      "status": "placeholder",
+      "scope": "Future type definitions for bundles, invariants, connections and cohomology",
+      "equations": [
+        "eq_topology_unimported"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "id": "eq_black_holes_pending",
+      "ontology": "ont_black_holes",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Horizon boundary conditions and semiclassical consistency",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_causal_information_pending",
+      "ontology": "ont_causal_information",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Information metrics, causal constraints, stochastic memory",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_einstein",
+      "ontology": "ont_classical_gravity",
+      "status": "established",
+      "latex": "G_{\\mu\\nu} = (8\\pi G/c^4)T_{\\mu\\nu}",
+      "scope": "Classical Einstein equation, zero cosmological constant, SI",
+      "dimensionGate": "PASS",
+      "imported": true,
+      "method": "restricted SI dimensional check"
+    },
+    {
+      "id": "eq_classical_mechanics_pending",
+      "ontology": "ont_classical_mechanics",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Phase-space equations, constraints and observables",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_condensed_matter_pending",
+      "ontology": "ont_condensed_matter",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Emergent excitations, phases and coarse graining",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_cosmology_pending",
+      "ontology": "ont_cosmology",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Friedmann reference, perturbations and candidate cosmic rotation",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_discrete_computational_pending",
+      "ontology": "ont_discrete_computational",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Discrete maps, continuum limits, lattice observables",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_efmw_candidate_unimported",
+      "ontology": "ont_efmw_lagrangian",
+      "status": "candidate",
+      "latex": "",
+      "scope": "External candidate C1: exact freeze and variation not imported",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_electromagnetism_pending",
+      "ontology": "ont_electromagnetism",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Maxwell equations, boundary conditions, gauge freedom",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_fluid_vorticity_pending",
+      "ontology": "ont_fluid_vorticity",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Continuity, pressure and vorticity closure",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_memory_toy",
+      "ontology": "ont_informational_dynamics",
+      "status": "placeholder",
+      "latex": "\\tau\\, dM/dt + M=e",
+      "scope": "Illustrative dimensionless first-order memory interface; NOT an EFMW physical law",
+      "dimensionGate": "PASS",
+      "imported": true,
+      "method": "restricted SI dimensional check"
+    },
+    {
+      "id": "eq_master_density",
+      "ontology": "ont_master_action",
+      "status": "placeholder",
+      "latex": "\\mathcal L_{total}=\\mathcal L_{GR}+\\mathcal L_{SM}+\\mathcal L_{int}+\\mathcal L_{candidate}",
+      "scope": "Organizational sum of densities; not a discovered action",
+      "dimensionGate": "PASS",
+      "imported": true,
+      "method": "restricted SI dimensional check"
+    },
+    {
+      "id": "eq_measurement_statistics_pending",
+      "ontology": "ont_measurement_statistics",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Instruments, uncertainties, data selection, null tests",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_measurement_unimported",
+      "ontology": "ont_observer_measurement",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Measurement/observer interface only",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_qft_pending",
+      "ontology": "ont_qft",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Fields, gauge fixing, renormalization, observables",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_quantum_geometry_pending",
+      "ontology": "ont_quantum_geometry",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Nonclassical geometry and reduction limits",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_quantum_mechanics_pending",
+      "ontology": "ont_quantum_mechanics",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Hilbert spaces, states, observables, unitary evolution",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_mass_shell",
+      "ontology": "ont_relativistic_kinematics",
+      "status": "established",
+      "latex": "E^2=(pc)^2+(mc^2)^2",
+      "scope": "Special relativity, on-shell particle, SI symbols",
+      "dimensionGate": "PASS",
+      "imported": true,
+      "method": "restricted SI dimensional check"
+    },
+    {
+      "id": "eq_sm_placeholder",
+      "ontology": "ont_standard_model",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Classical Standard Model decomposition, symbolic only; full source not imported",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_stat_mechanics_pending",
+      "ontology": "ont_stat_mechanics",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Microstate ensembles, entropy, fluctuations",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_symplectic_poisson_pending",
+      "ontology": "ont_symplectic_poisson",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Poisson brackets, symplectic forms, canonical transformations",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    },
+    {
+      "id": "eq_topology_unimported",
+      "ontology": "ont_topological_structure",
+      "status": "placeholder",
+      "latex": "",
+      "scope": "Type/schema interface only",
+      "dimensionGate": "UNRESOLVED",
+      "imported": false,
+      "method": "no machine-readable source sides imported"
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "if_gr_sm",
+      "name": "GR ↔ Standard Model",
+      "from": "ont_classical_gravity",
+      "to": "ont_standard_model",
+      "status": "UNRESOLVED",
+      "kind": "reference bridge",
+      "scope": "Classical minimal coupling has known restricted constructions; full quantum gravity remains open."
+    },
+    {
+      "id": "if_efmw_gr",
+      "name": "EFMW ↔ Gravity",
+      "from": "ont_efmw_lagrangian",
+      "to": "ont_classical_gravity",
+      "status": "UNRESOLVED",
+      "kind": "candidate coupling",
+      "scope": "No imported mathematically defined source map or measured nonzero κI."
+    },
+    {
+      "id": "if_topology_field",
+      "name": "Topology ↔ Fields",
+      "from": "ont_topological_structure",
+      "to": "ont_standard_model",
+      "status": "UNRESOLVED",
+      "kind": "proposed mapping",
+      "scope": "Bundles, invariants and field configuration map require exact definitions."
+    },
+    {
+      "id": "if_observer_physics",
+      "name": "Observer ↔ Physics",
+      "from": "ont_observer_measurement",
+      "to": "ont_master_action",
+      "status": "UNRESOLVED",
+      "kind": "measurement",
+      "scope": "Operational readout, noise model, and likelihood remain unspecified."
+    }
+  ],
+  "obligations": [
+    {
+      "id": "ob_efmw_gauge",
+      "question": "Derive or reject unmatched gauge currents from one explicitly fixed action.",
+      "target": "ont_efmw_lagrangian",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_efmw_gravity",
+      "question": "Supply metric variation and full stress identification; test conservation identities.",
+      "target": "ont_efmw_lagrangian",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_efmw_scalar_sign",
+      "question": "Resolve source sign mismatch against differentiated candidate potentials.",
+      "target": "ont_efmw_lagrangian",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_g3",
+      "question": "Distinguish κI = 0 from nonzero using a measurable observable and preregistered nulls.",
+      "target": "ont_classical_gravity",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_info_energy",
+      "question": "Reconcile information tensor energy with storage, work and dissipation.",
+      "target": "ont_informational_dynamics",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_observer_predictions",
+      "question": "Define identifiable observables, uncertainties, nulls and independent replication.",
+      "target": "ont_observer_measurement",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_pin_sources",
+      "question": "Freeze upstream SHAs and import exact source expressions without silent relabeling.",
+      "target": "ont_master_action",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_quantum_gravity",
+      "question": "Define a quantum-gravity completion or explicitly state the effective-domain cutoff.",
+      "target": "ont_master_action",
+      "status": "UNRESOLVED"
+    },
+    {
+      "id": "ob_sm_39strata",
+      "question": "Derive or falsify proposed 39-strata geometry against Standard Model observables.",
+      "target": "ont_standard_model",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_102",
+      "repository": "enuminous/Monolithic_102_EFMW",
+      "url": "https://github.com/enuminous/Monolithic_102_EFMW",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_cosmology",
+      "repository": "enuminous/Cosmology",
+      "url": "https://github.com/enuminous/Cosmology",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_efmw",
+      "repository": "enuminous/EFMW",
+      "url": "https://github.com/enuminous/EFMW",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_efmw_lagrangian",
+      "repository": "enuminous/EFMW-Lagrangian",
+      "url": "https://github.com/enuminous/EFMW-Lagrangian/blob/main/README.md",
+      "inspection": "README metadata inspected 2026-11-08",
+      "pinned": false
+    },
+    {
+      "id": "src_geometry",
+      "repository": "enuminous/Geometry",
+      "url": "https://github.com/enuminous/Geometry/blob/main/README.md",
+      "inspection": "README metadata inspected 2026-11-08",
+      "pinned": false
+    },
+    {
+      "id": "src_information_tensor",
+      "repository": "enuminous/Information-Tensor",
+      "url": "https://github.com/enuminous/Information-Tensor/blob/main/README.md",
+      "inspection": "README metadata inspected 2026-11-08",
+      "pinned": false
+    },
+    {
+      "id": "src_lean_zoo",
+      "repository": "enuminous/Monolithic-102-Zoo-Lean4",
+      "url": "https://github.com/enuminous/Monolithic-102-Zoo-Lean4",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_oph",
+      "repository": "enuminous/oph-lab",
+      "url": "https://github.com/enuminous/oph-lab",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_papers",
+      "repository": "enuminous/papers",
+      "url": "https://github.com/enuminous/papers",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_phase_vorticity",
+      "repository": "enuminous/Phase-Vorticity-Lab",
+      "url": "https://github.com/enuminous/Phase-Vorticity-Lab",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_quantum_geometry",
+      "repository": "enuminous/Base888-Quantum-Geometry",
+      "url": "https://github.com/enuminous/Base888-Quantum-Geometry",
+      "inspection": "Queued; not inspected or ingested",
+      "pinned": false
+    },
+    {
+      "id": "src_sm_reduction",
+      "repository": "enuminous/Standard-Model-Reduction",
+      "url": "https://github.com/enuminous/Standard-Model-Reduction/blob/main/README.md",
+      "inspection": "README metadata inspected 2026-11-08",
+      "pinned": false
+    }
+  ],
+  "quantities": [
+    {
+      "symbol": "G_munu",
+      "si": "L^-2"
+    },
+    {
+      "symbol": "E",
+      "si": "M L^2 T^-2"
+    },
+    {
+      "symbol": "e",
+      "si": "dimensionless"
+    },
+    {
+      "symbol": "L_candidate",
+      "si": "M L^-1 T^-2"
+    },
+    {
+      "symbol": "L_GR",
+      "si": "M L^-1 T^-2"
+    },
+    {
+      "symbol": "L_int",
+      "si": "M L^-1 T^-2"
+    },
+    {
+      "symbol": "L_SM",
+      "si": "M L^-1 T^-2"
+    },
+    {
+      "symbol": "L_total",
+      "si": "M L^-1 T^-2"
+    },
+    {
+      "symbol": "m",
+      "si": "M"
+    },
+    {
+      "symbol": "M_state",
+      "si": "dimensionless"
+    },
+    {
+      "symbol": "dM_dt",
+      "si": "T^-1"
+    },
+    {
+      "symbol": "p",
+      "si": "M L T^-1"
+    },
+    {
+      "symbol": "G",
+      "si": "M^-1 L^3 T^-2"
+    },
+    {
+      "symbol": "tau",
+      "si": "T"
+    },
+    {
+      "symbol": "c",
+      "si": "L T^-1"
+    },
+    {
+      "symbol": "T_munu",
+      "si": "M L^-1 T^-2"
+    },
+    {
+      "symbol": "t",
+      "si": "T"
+    }
+  ],
+  "findings": [
+    {
+      "gate": "dimension",
+      "target": "eq_black_holes_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_causal_information_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_einstein",
+      "outcome": "PASS",
+      "detail": "Dimensional agreement only; no dynamics verified."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_classical_mechanics_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_condensed_matter_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_cosmology_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_discrete_computational_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_efmw_candidate_unimported",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_electromagnetism_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_fluid_vorticity_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_memory_toy",
+      "outcome": "PASS",
+      "detail": "Dimensional agreement only; no dynamics verified."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_master_density",
+      "outcome": "PASS",
+      "detail": "Dimensional agreement only; no dynamics verified."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_measurement_statistics_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_measurement_unimported",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_qft_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_quantum_geometry_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_quantum_mechanics_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_mass_shell",
+      "outcome": "PASS",
+      "detail": "Dimensional agreement only; no dynamics verified."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_sm_placeholder",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_stat_mechanics_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_symplectic_poisson_pending",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "dimension",
+      "target": "eq_topology_unimported",
+      "outcome": "UNRESOLVED",
+      "detail": "No machine-readable source sides; test not executed."
+    },
+    {
+      "gate": "registry-static",
+      "target": "catalog",
+      "outcome": "PASS",
+      "detail": "Registry and supported dimension checks passed; no physical validation implied."
+    },
+    {
+      "gate": "interface-map",
+      "target": "if_gr_sm",
+      "outcome": "UNRESOLVED",
+      "detail": "Mapping or coupling not mathematically specified."
+    },
+    {
+      "gate": "interface-map",
+      "target": "if_efmw_gr",
+      "outcome": "UNRESOLVED",
+      "detail": "Mapping or coupling not mathematically specified."
+    },
+    {
+      "gate": "interface-map",
+      "target": "if_topology_field",
+      "outcome": "UNRESOLVED",
+      "detail": "Mapping or coupling not mathematically specified."
+    },
+    {
+      "gate": "interface-map",
+      "target": "if_observer_physics",
+      "outcome": "UNRESOLVED",
+      "detail": "Mapping or coupling not mathematically specified."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_efmw_gauge",
+      "outcome": "UNRESOLVED",
+      "detail": "Derive or reject unmatched gauge currents from one explicitly fixed action."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_efmw_gravity",
+      "outcome": "UNRESOLVED",
+      "detail": "Supply metric variation and full stress identification; test conservation identities."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_efmw_scalar_sign",
+      "outcome": "UNRESOLVED",
+      "detail": "Resolve source sign mismatch against differentiated candidate potentials."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_g3",
+      "outcome": "UNRESOLVED",
+      "detail": "Distinguish κI = 0 from nonzero using a measurable observable and preregistered nulls."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_info_energy",
+      "outcome": "UNRESOLVED",
+      "detail": "Reconcile information tensor energy with storage, work and dissipation."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_observer_predictions",
+      "outcome": "UNRESOLVED",
+      "detail": "Define identifiable observables, uncertainties, nulls and independent replication."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_pin_sources",
+      "outcome": "UNRESOLVED",
+      "detail": "Freeze upstream SHAs and import exact source expressions without silent relabeling."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_quantum_gravity",
+      "outcome": "UNRESOLVED",
+      "detail": "Define a quantum-gravity completion or explicitly state the effective-domain cutoff."
+    },
+    {
+      "gate": "research-obligation",
+      "target": "ob_sm_39strata",
+      "outcome": "UNRESOLVED",
+      "detail": "Derive or falsify proposed 39-strata geometry against Standard Model observables."
+    },
+    {
+      "gate": "source-pin",
+      "target": "src_efmw_lagrangian",
+      "outcome": "UNRESOLVED",
+      "detail": "README inspected; immutable source revision and hash not frozen."
+    },
+    {
+      "gate": "source-pin",
+      "target": "src_geometry",
+      "outcome": "UNRESOLVED",
+      "detail": "README inspected; immutable source revision and hash not frozen."
+    },
+    {
+      "gate": "source-pin",
+      "target": "src_information_tensor",
+      "outcome": "UNRESOLVED",
+      "detail": "README inspected; immutable source revision and hash not frozen."
+    },
+    {
+      "gate": "source-pin",
+      "target": "src_sm_reduction",
+      "outcome": "UNRESOLVED",
+      "detail": "README inspected; immutable source revision and hash not frozen."
+    }
+  ],
+  "paper_url": "https://github.com/enuminous/papers/blob/main/MOC-001-Compiling-Ontologies-Toward-Testable-Unity-of-Physics-2026-11-08.md",
+  "unity_appendix_url": "https://github.com/enuminous/papers/blob/main/research/moc-001/UNITY_APPENDIX.md",
+  "source_note": "Curated, loss-aware browser representation of the MOC-001 generated manifest; not an independent recompile; no upstream corpus imported."
+}
