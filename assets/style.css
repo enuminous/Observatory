@@ -353,3 +353,10 @@ input[type=search]::placeholder{color:#729294}
 .phase3-meta a{margin-left:auto;color:var(--teal)}
 @media(max-width:860px){.phase3-header{flex-direction:column;align-items:stretch}.phase3-outcomes{grid-template-columns:1fr}}
 @media(max-width:580px){.phase3-panel{padding:17px}.phase3-meta a{margin-left:0}}
+
+/* Phase 5: a synthetic identifiability gate, not a physical discovery */
+.phase5-panel{margin-top:20px;padding:24px;border:1px solid #57797a;background:linear-gradient(148deg,rgba(25,56,64,.88),rgba(8,26,35,.95))}
+.phase5-panel .eyebrow{color:#abf7e5}
+.phase5-panel .phase3-outcomes article{background:#0c2129}
+.phase5-panel .phase3-outcomes strong{color:#e0f3ed}
+@media(max-width:580px){.phase5-panel{padding:17px}}

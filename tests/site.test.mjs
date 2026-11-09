@@ -113,3 +113,23 @@ test('Phase 3 claims are separate from unresolved original Observatory bridges',
   assert.match(get('index.html'),/A narrow bridge. A useful obstruction/);
   assert.match(get('index.html'),/PHASE 3/);
 });
+
+test('Phase 5 toy identifiability and physical NOT READY verdict do not rewrite older science',()=>{
+  const p=d.phase_5_identifiability;
+  assert.equal(p.claims_total,11);
+  assert.deepEqual(p.claims,{PASS:4,FAIL:1,UNRESOLVED:6});
+  assert.equal(p.test_execution.passed,25);
+  assert.equal(p.co_located_conventional_fisher_information,0);
+  assert.ok(p.toy_sensitivity_degradation_factor>500);
+  assert.equal(p.physical_readiness,'NOT_READY_FOR_CONFIRMATORY_PHYSICAL_PREDICTION');
+  assert.equal(p.physical_EFMW_PASS,0);
+  assert.equal(p.prior_phase2_conflicts_resolved,0);
+  assert.equal(p.original_bridges_closed,0);
+  assert.equal(d.counts.PASS,5);
+  assert.equal(d.counts.UNRESOLVED,35);
+  assert.ok(d.interfaces.every(x=>x.status==='UNRESOLVED'));
+  assert.equal(d.phase_2_type_compilation.typed_pass,9);
+  assert.equal(d.phase_3_correspondence.claim_counts.PASS,3);
+  assert.match(get('index.html'),/id="phase5"/);
+  assert.match(get('index.html'),/A candidate source must beat ordinary matter/);
+});

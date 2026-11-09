@@ -1029,5 +1029,38 @@
     "contracts_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-3/interfaces.json",
     "ci_url": "https://github.com/enuminous/papers/actions/runs/42622880582",
     "status_boundary": "A reference Maxwell action subfamily is not proof of a complete GR/SM/EFMW interface. Original Phase 2 conflicts and MOC-001 static snapshot are unchanged."
+  },
+  "phase_5_identifiability": {
+    "date": "2026-11-09",
+    "status": "BOUNDED_IDENTIFIABILITY_SCREEN_PASS_PHYSICAL_PREDICTION_UNRESOLVED",
+    "physical_readiness": "NOT_READY_FOR_CONFIRMATORY_PHYSICAL_PREDICTION",
+    "type": "exploratory entirely synthetic design; not observation or registered physical prediction",
+    "claims_total": 11,
+    "claims": {
+      "PASS": 4,
+      "FAIL": 1,
+      "UNRESOLVED": 6
+    },
+    "test_execution": {
+      "passed": 25,
+      "total": 25,
+      "run_id": 42633977283
+    },
+    "nominal_narrow_sigma_kappa": 0.09358573778686018,
+    "co_located_conventional_fisher_information": 0,
+    "near_nuisance_sigma_kappa": 53.08237576360931,
+    "toy_sensitivity_degradation_factor": 567.2058266453321,
+    "physical_EFMW_PASS": 0,
+    "prior_phase2_conflicts_resolved": 0,
+    "original_bridges_closed": 0,
+    "inputs": {
+      "phase1_frozen_source_records": 717,
+      "phase2_typed_checks": 9,
+      "phase3_bounded_classical_claims": 8
+    },
+    "report_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-5/PHASE5_REPORT.md",
+    "protocol_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-5/PROTOCOL.json",
+    "ci_url": "https://github.com/enuminous/papers/actions/runs/42633977283",
+    "note": "Strong conventional co-located matter nuisance exactly absorbs hypothetical informational source; physical rho_I, measured conventional mass, instrument and independent approvals remain missing. Earlier counts not recomputed."
   }
 }
