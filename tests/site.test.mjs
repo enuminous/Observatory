@@ -133,3 +133,21 @@ test('Phase 5 toy identifiability and physical NOT READY verdict do not rewrite 
   assert.match(get('index.html'),/id="phase5"/);
   assert.match(get('index.html'),/A candidate source must beat ordinary matter/);
 });
+
+test('IST-001 is bounded mathematical work and cannot promote Unity Phase 5',()=>{
+  const p=d.ist_001;
+  assert.deepEqual(p.executed_controls,{PASS:6,FAIL:0,UNRESOLVED:2});
+  assert.equal(p.ci_tests.passed,24);
+  assert.equal(p.metric_variation_exact_examples,32);
+  assert.equal(p.conservative_energy_exchange_polynomial_examples,48);
+  assert.equal(p.finite_bath_energy_examples,35);
+  assert.equal(p.EFMW_specific_physical_PASS,0);
+  assert.equal(p.unique_IST_derivation,'UNRESOLVED');
+  assert.equal(p.phase_5_confirmatory_readiness,'NOT_READY_FOR_CONFIRMATORY_PHYSICAL_PREDICTION');
+  assert.equal(d.phase_5_identifiability.physical_readiness,'NOT_READY_FOR_CONFIRMATORY_PHYSICAL_PREDICTION');
+  assert.equal(d.counts.PASS,5);
+  assert.equal(d.counts.UNRESOLVED,35);
+  assert.ok(d.interfaces.every(x=>x.status==='UNRESOLVED'));
+  assert.match(get('index.html'),/id="ist001"/);
+  assert.match(get('index.html'),/Memory has energy. The accounting must close/);
+});

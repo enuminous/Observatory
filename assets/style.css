@@ -360,3 +360,9 @@ input[type=search]::placeholder{color:#729294}
 .phase5-panel .phase3-outcomes article{background:#0c2129}
 .phase5-panel .phase3-outcomes strong{color:#e0f3ed}
 @media(max-width:580px){.phase5-panel{padding:17px}}
+
+/* IST-001 mathematical controls are not a physical prediction */
+.ist-panel{border-color:#417d70;background:linear-gradient(145deg,rgba(12,55,43,.78),rgba(8,26,31,.95))}
+.ist-panel .eyebrow{color:#b3e9cb}
+.ist-panel strong{color:#d7f5e4}
+.ist-panel .phase3-outcomes article{background:#102827}

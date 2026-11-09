@@ -1062,5 +1062,36 @@
     "protocol_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-5/PROTOCOL.json",
     "ci_url": "https://github.com/enuminous/papers/actions/runs/42633977283",
     "note": "Strong conventional co-located matter nuisance exactly absorbs hypothetical informational source; physical rho_I, measured conventional mass, instrument and independent approvals remain missing. Earlier counts not recomputed."
+  },
+  "ist_001": {
+    "date": "2026-11-09",
+    "scientific_status": "MATHEMATICAL_CONTROL_PASS_PHYSICAL_IST_UNRESOLVED",
+    "executed_controls": {
+      "PASS": 6,
+      "FAIL": 0,
+      "UNRESOLVED": 2
+    },
+    "ci_tests": {
+      "passed": 24,
+      "total": 24
+    },
+    "metric_variation_exact_examples": 32,
+    "conservative_energy_exchange_polynomial_examples": 48,
+    "finite_bath_energy_examples": 35,
+    "finite_bath_numerical_refinement_ratios": [
+      3.9882312197573135,
+      3.99706143434151,
+      3.9992655882475114
+    ],
+    "finite_bath_GLE_max_residual": 1.1102230246251565e-16,
+    "first_order_relaxation": "CONDITIONAL_OVERDAMPED_APPROXIMATION_NOT_DERIVED_FROM_FINITE_BATH",
+    "EFMW_specific_physical_PASS": 0,
+    "unique_IST_derivation": "UNRESOLVED",
+    "all_original_unity_bridges_closed": 0,
+    "phase_5_confirmatory_readiness": "NOT_READY_FOR_CONFIRMATORY_PHYSICAL_PREDICTION",
+    "theory_url": "https://github.com/enuminous/papers/blob/main/IST-001-Deriving-Informational-Stress-from-Covariant-Memory-and-Reservoir-Models-2026-11-09.md",
+    "report_url": "https://github.com/enuminous/papers/blob/main/research/ist-001/IST001_REPORT.md",
+    "ci_url": "https://github.com/enuminous/papers/actions/runs/42669567461",
+    "boundary": "Separate bounded mathematical control results; no EFMW-specific physical experiment or proof of full WITD dynamics; original MOC-001 and Phase 5 scores unchanged."
   }
 }
