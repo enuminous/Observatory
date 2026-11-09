@@ -327,3 +327,8 @@ input[type=search]::placeholder{color:#729294}
 .source-card p.source-commit{font:10px var(--mono);color:#9ecfc1;overflow-wrap:anywhere}
 .source-card p.source-commit a{font:10px var(--mono);color:var(--teal)}
 @media(max-width:860px){.source-freeze-panel{flex-direction:column;align-items:stretch}}
+
+/* Phase 2 typed-compiler status, postdating MOC-001 baseline */
+.phase-two-panel{margin-bottom:12px;border-color:#42737b;background:linear-gradient(115deg,rgba(28,63,83,.36),rgba(10,30,35,.90))}
+.phase-two-panel .eyebrow{color:#c4d8ff}
+.phase-two-panel em{color:#f5bc81}

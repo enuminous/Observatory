@@ -975,5 +975,24 @@
     "lock_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-1/sources.lock.json",
     "ledger_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-1/source-equations.csv",
     "evidence_boundary": "Phase 1 provenance results were added after the original 2026-11-08 snapshot. The 5/40 historical structural gates and 35 unresolved findings are preserved unchanged; this does not close all-source ob_pin_sources or validate physics."
+  },
+  "phase_2_type_compilation": {
+    "date": "2026-11-09",
+    "status": "BOUNDED_TYPE_CHECK_PASS_FULL_COMPILATION_UNRESOLVED",
+    "source_records": 717,
+    "typed_checked": 9,
+    "typed_pass": 9,
+    "typed_fail": 0,
+    "uncompiled": 708,
+    "conflicts_unresolved": 8,
+    "adversarial_tests_pass": 20,
+    "adversarial_tests_total": 20,
+    "physical_pass": 0,
+    "equivalences_proved": 0,
+    "methods": "Manually declared, source-linked AST plus a restricted dimension/shape checker; not automatic parsing or physics proof",
+    "report_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-2/PHASE2_REPORT.md",
+    "registry_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-2/typed-registry.json",
+    "ci_url": "https://github.com/enuminous/papers/actions/runs/42619525163",
+    "snapshot_boundary": "This result postdates and does not replace the 5/40 MOC-001 2026-11-08 baseline."
   }
 }

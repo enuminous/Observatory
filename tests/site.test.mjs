@@ -79,3 +79,20 @@ test('post-snapshot source freeze is separately traced without rewriting older g
   assert.equal(d.counts.UNRESOLVED,35);
   assert.match(get('index.html'),/Four priority repositories, source-frozen/);
 });
+
+test('Phase 2 is separate, bounded and does not promote MOC baseline',()=>{
+  const p=d.phase_2_type_compilation;
+  assert.equal(p.source_records,717);
+  assert.equal(p.typed_checked,9);
+  assert.equal(p.typed_pass,9);
+  assert.equal(p.typed_fail,0);
+  assert.equal(p.uncompiled,708);
+  assert.equal(p.conflicts_unresolved,8);
+  assert.equal(p.adversarial_tests_pass,20);
+  assert.equal(p.physical_pass,0);
+  assert.equal(p.equivalences_proved,0);
+  assert.equal(d.counts.PASS,5);
+  assert.equal(d.counts.UNRESOLVED,35);
+  assert.equal(d.phase_1_source_freeze.priority_git_blobs,209);
+  assert.match(get('index.html'),/Nine typed checks. Seven hundred eight still uncompiled/);
+});
