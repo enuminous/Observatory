@@ -332,3 +332,24 @@ input[type=search]::placeholder{color:#729294}
 .phase-two-panel{margin-bottom:12px;border-color:#42737b;background:linear-gradient(115deg,rgba(28,63,83,.36),rgba(10,30,35,.90))}
 .phase-two-panel .eyebrow{color:#c4d8ff}
 .phase-two-panel em{color:#f5bc81}
+
+/* 2026-11-09 Phase 3: bounded reference bridge and unresolved EFMW gate */
+.phase3-panel{margin-top:22px;border:1px solid #416b68;background:linear-gradient(155deg,rgba(16,47,48,.78),rgba(9,28,34,.9));padding:24px}
+.phase3-header{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:20px}
+.phase3-header h3{font-size:27px;font-weight:500;line-height:1.2;letter-spacing:-.04em;margin:6px 0 10px}
+.phase3-header p:not(.eyebrow){font-size:12px;color:#a3c2bd;max-width:720px;margin:0}
+.phase3-header strong{color:#d4fff0}
+.phase3-outcomes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.phase3-outcomes article{border:1px solid #36585a;background:#0b2228;padding:19px;min-width:0}
+.phase3-outcomes h4{font-size:17px;font-weight:550;letter-spacing:-.025em;margin:15px 0 7px}
+.phase3-outcomes p{font-size:12px;color:#a8bfbc;line-height:1.65}
+.phase3-outcomes .math-inline{font-family:var(--mono);font-size:11px;color:#b9f5db;border-top:1px solid #36565a;padding-top:10px;overflow-wrap:anywhere}
+.phase3-flag{font:700 10px var(--mono);letter-spacing:.06em}
+.phase3-flag.pass{color:#a1ffe1}
+.phase3-flag.fail{color:#f4b58b}
+.phase3-flag.unresolved{color:#bbc9d5}
+.phase3-meta{display:flex;gap:12px 20px;flex-wrap:wrap;align-items:center;margin-top:17px;padding-top:15px;border-top:1px solid #34545a;color:#96b3b4;font:10px var(--mono)}
+.phase3-meta strong{color:#e8f0eb}
+.phase3-meta a{margin-left:auto;color:var(--teal)}
+@media(max-width:860px){.phase3-header{flex-direction:column;align-items:stretch}.phase3-outcomes{grid-template-columns:1fr}}
+@media(max-width:580px){.phase3-panel{padding:17px}.phase3-meta a{margin-left:0}}

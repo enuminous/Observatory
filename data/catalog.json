@@ -994,5 +994,40 @@
     "registry_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-2/typed-registry.json",
     "ci_url": "https://github.com/enuminous/papers/actions/runs/42619525163",
     "snapshot_boundary": "This result postdates and does not replace the 5/40 MOC-001 2026-11-08 baseline."
+  },
+  "phase_3_correspondence": {
+    "date": "2026-11-09",
+    "status": "BOUNDED_REFERENCE_ACTION_CORRESPONDENCE_PASS_EFMW_BRIDGE_UNRESOLVED",
+    "claims_total": 8,
+    "claim_counts": {
+      "PASS": 3,
+      "FAIL": 2,
+      "UNRESOLVED": 3
+    },
+    "python_adversarial_tests": {
+      "passed": 27,
+      "total": 27
+    },
+    "algebraic_reference_projection": "C1 with phi=B=all pair/triple couplings=0 -> Einstein-Maxwell bulk action density",
+    "abelian_kinetic_comparison": "Maxwell F² is invariant under g->-g for a rank-2 field strength; fixed-background SM H=0 retains V(0)=lambda*v^4/4",
+    "source_only_ambiguity": "T+kappa I invariant under T'=T+kappa J,I'=I-J for unrestricted source; matter-fixed controls break absorbed representation",
+    "nonminimal_coupling_counterexample": "Unrestricted g_EM produces remainder -g_EM R X; witness -12/7",
+    "higgs_vacuum_counterexample": "At lambda=2, v=2, gauge-only SM differs by -8",
+    "finite_exact_checks": {
+      "metric_direction": 240,
+      "signature_flip": 24,
+      "field_variation": 24,
+      "source_absorption": 24,
+      "source_split": 24,
+      "independent_fixed_matter": 24
+    },
+    "EFMW_specific_physical_PASS": 0,
+    "original_four_interfaces_closed": 0,
+    "all_eight_phase2_conflicts_resolved": 0,
+    "manifest_artifact_url": "https://github.com/enuminous/papers/actions/runs/42622880582/artifacts/13677480505",
+    "report_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-3/PHASE3_REPORT.md",
+    "contracts_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-3/interfaces.json",
+    "ci_url": "https://github.com/enuminous/papers/actions/runs/42622880582",
+    "status_boundary": "A reference Maxwell action subfamily is not proof of a complete GR/SM/EFMW interface. Original Phase 2 conflicts and MOC-001 static snapshot are unchanged."
   }
 }

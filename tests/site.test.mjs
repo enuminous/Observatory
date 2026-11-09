@@ -96,3 +96,20 @@ test('Phase 2 is separate, bounded and does not promote MOC baseline',()=>{
   assert.equal(d.phase_1_source_freeze.priority_git_blobs,209);
   assert.match(get('index.html'),/Nine typed checks. Seven hundred eight still uncompiled/);
 });
+
+test('Phase 3 claims are separate from unresolved original Observatory bridges',()=>{
+  const p=d.phase_3_correspondence;
+  assert.equal(p.claims_total,8);
+  assert.deepEqual(p.claim_counts,{PASS:3,FAIL:2,UNRESOLVED:3});
+  assert.equal(p.python_adversarial_tests.passed,27);
+  assert.equal(p.finite_exact_checks.metric_direction,240);
+  assert.equal(p.EFMW_specific_physical_PASS,0);
+  assert.equal(p.original_four_interfaces_closed,0);
+  assert.equal(p.all_eight_phase2_conflicts_resolved,0);
+  assert.equal(d.counts.PASS,5);
+  assert.equal(d.counts.UNRESOLVED,35);
+  assert.equal(d.phase_2_type_compilation.typed_pass,9);
+  assert.ok(d.interfaces.every(x=>x.status==='UNRESOLVED'));
+  assert.match(get('index.html'),/A narrow bridge. A useful obstruction/);
+  assert.match(get('index.html'),/PHASE 3/);
+});

@@ -81,3 +81,9 @@ The [published Phase 1 report](https://github.com/enuminous/papers/blob/main/res
 ## UNITY-001 Phase 2 typed-compiler addendum — 9 November 2026
 
 The [Phase 2 executed report](https://github.com/enuminous/papers/blob/main/research/unity-001/phase-2/PHASE2_REPORT.md) documents a conservative source-linked typed-AST compiler: **9/9 declared interpretations pass**, **708/717 original source records remain uncompiled**, **eight scientific conflicts remain unresolved**, and **20 adversarial software tests passed** in [GitHub CI](https://github.com/enuminous/papers/actions/runs/42619525163). These checks are about source anchors, manually declared dimensions and mathematical shapes, not independently proved equations or physical validation. No original MOC-001 scorecard finding was rewritten.
+
+## UNITY-001 Phase 3 correspondence addendum — 9 November 2026
+
+[The executed Phase 3 report](https://github.com/enuminous/papers/blob/main/research/unity-001/phase-3/PHASE3_REPORT.md) documents a limited algebraic correspondence of the C1 action to a conventional Einstein–Maxwell bulk action **only after setting all extra fields and pair/triple couplings to zero**. Its comparison with the SM is restricted to an Abelian gauge kinetic expression under opposite metric-signature conventions and retains the Higgs vacuum-energy offset. Geometry component algebra shows source-only non-identifiability of (T+κI) when (T) is unrestricted; separately fixed matter breaks that ambiguity in constructed controls.
+
+**Denominator:** 3 PASS, 2 explicit-counterexample FAIL, 3 UNRESOLVED across eight bounded Phase 3 findings. **27/27 software tests** passed in [GitHub CI](https://github.com/enuminous/papers/actions/runs/42622880582). **Zero EFMW-specific physical PASS**, no full Standard Model mapping or coupled Einstein–Maxwell PDE proof. The original four broad Observatory interfaces remain unresolved. Earlier MOC-001, Phase 1 and Phase 2 metrics are untouched.
