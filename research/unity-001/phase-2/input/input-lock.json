@@ -1,0 +1,11 @@
+{
+  "version": "phase2-input-v1",
+  "date": "2026-11-09",
+  "phase1_csv_origin": "enuminous/papers@956c786c462951d33e3f12e0bbb288560d8e2da9:research/unity-001/phase-1/source-equations.csv",
+  "phase1_csv_git_blob": "aff2302bcbad8759f6302f8b218cf029dfc3de2a",
+  "phase1_lock_origin": "enuminous/papers@956c786c462951d33e3f12e0bbb288560d8e2da9:research/unity-001/phase-1/sources.lock.json",
+  "phase1_lock_git_blob": "4864241eff6aadd30e8918787f73160a3c730765",
+  "record_count": 717,
+  "primary_repository_count": 4,
+  "source_fidelity": "phase1 archived identities; no new claims"
+}

@@ -1,0 +1,259 @@
+{
+  "schema": "unity-001-phase2-types-v1",
+  "dimensions": [
+    "L",
+    "T",
+    "M",
+    "Q"
+  ],
+  "scope": "Q is abstract scalar-field amplitude; natural units model mass via inverse L; no inter-domain unit bridge established",
+  "kinds": [
+    "scalar",
+    "tensor2cov"
+  ],
+  "symbols": [
+    {
+      "id": "canonical:box_wave_phi",
+      "sort": "scalar",
+      "dim": {
+        "L": -2,
+        "Q": 1
+      },
+      "signature": "(+---)"
+    },
+    {
+      "id": "canonical:wave_phi",
+      "sort": "scalar",
+      "dim": {
+        "Q": 1
+      },
+      "signature": "(+---)"
+    },
+    {
+      "id": "canonical:c",
+      "sort": "scalar",
+      "dim": {
+        "L": 1,
+        "T": -1
+      },
+      "signature": "(+---)"
+    },
+    {
+      "id": "canonical:golden_phi",
+      "sort": "scalar",
+      "dim": {},
+      "signature": null
+    },
+    {
+      "id": "canonical:Phi23",
+      "sort": "scalar",
+      "dim": {},
+      "signature": null
+    },
+    {
+      "id": "canonical:Phi46",
+      "sort": "scalar",
+      "dim": {},
+      "signature": null
+    },
+    {
+      "id": "canonical:V13",
+      "sort": "scalar",
+      "dim": {},
+      "signature": null
+    },
+    {
+      "id": "geometry:proposedRicciScalar",
+      "sort": "scalar",
+      "dim": {
+        "L": -2
+      },
+      "signature": null
+    },
+    {
+      "id": "geometry:t",
+      "sort": "scalar",
+      "dim": {
+        "L": 1
+      },
+      "signature": null
+    },
+    {
+      "id": "witd:q",
+      "sort": "scalar",
+      "dim": {
+        "Q": 1
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:m",
+      "sort": "scalar",
+      "dim": {
+        "Q": 1
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:p",
+      "sort": "scalar",
+      "dim": {
+        "Q": 1,
+        "T": -1
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:alpha",
+      "sort": "scalar",
+      "dim": {
+        "T": -1
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:beta",
+      "sort": "scalar",
+      "dim": {},
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:I_ab",
+      "sort": "tensor2cov",
+      "dim": {
+        "Q": 2,
+        "L": -2
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:R_ab",
+      "sort": "tensor2cov",
+      "dim": {
+        "Q": 2,
+        "L": -2
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:T_ab_m",
+      "sort": "tensor2cov",
+      "dim": {
+        "Q": 2,
+        "L": -2
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "witd:T_ab_q",
+      "sort": "tensor2cov",
+      "dim": {
+        "Q": 2,
+        "L": -2
+      },
+      "signature": "(-+++),2D"
+    },
+    {
+      "id": "c1:varphi_a",
+      "sort": "scalar",
+      "dim": {
+        "L": -1
+      },
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "c1:U_deriv_a",
+      "sort": "scalar",
+      "dim": {
+        "L": -3
+      },
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "c1:Mpl2",
+      "sort": "scalar",
+      "dim": {
+        "L": -2
+      },
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "c1:G_munu",
+      "sort": "tensor2cov",
+      "dim": {
+        "L": -2
+      },
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "c1:Lambda",
+      "sort": "scalar",
+      "dim": {
+        "L": -2
+      },
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "c1:g_munu",
+      "sort": "tensor2cov",
+      "dim": {},
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "c1:T0_munu",
+      "sort": "tensor2cov",
+      "dim": {
+        "L": -4
+      },
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "c1:TU_munu",
+      "sort": "tensor2cov",
+      "dim": {
+        "L": -4
+      },
+      "signature": "(-+++),natural"
+    },
+    {
+      "id": "sm:mh",
+      "sort": "scalar",
+      "dim": {
+        "L": -1
+      },
+      "signature": "(+---)"
+    },
+    {
+      "id": "sm:v",
+      "sort": "scalar",
+      "dim": {
+        "L": -1
+      },
+      "signature": "(+---)"
+    },
+    {
+      "id": "sm:lambda",
+      "sort": "scalar",
+      "dim": {},
+      "signature": "(+---)"
+    },
+    {
+      "id": "sm:YQ",
+      "sort": "scalar",
+      "dim": {},
+      "signature": "(+---)"
+    },
+    {
+      "id": "sm:Yu",
+      "sort": "scalar",
+      "dim": {},
+      "signature": "(+---)"
+    },
+    {
+      "id": "sm:Yd",
+      "sort": "scalar",
+      "dim": {},
+      "signature": "(+---)"
+    }
+  ]
+}

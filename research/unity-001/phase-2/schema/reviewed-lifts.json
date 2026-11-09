@@ -1,0 +1,551 @@
+{
+  "schema": "unity-001-phase2-curated-ast-v1",
+  "status": "draft_manually_curated_not_formal_proof",
+  "evidence_boundary": "A template matched to an exact source string is a candidate translation for static dimension and tensor-rank checks, not a proof of the physical equation, covariance, or source equivalence.",
+  "lifts": [
+    {
+      "record_id": "ME-004",
+      "original_blob_sha": "5e68eec5ebfed0764d0c55404249de082ce02f03",
+      "source_line": 40,
+      "expected_statement": "□φ = (1/c²)(∂²φ/∂t²) − ∇²φ",
+      "sector": "canonical_wave",
+      "status": "historical_operator",
+      "signature": "(+---)",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "wave-operator signature copied from ME-004; does not establish source field equation or covariance",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sym",
+          "name": "canonical:box_wave_phi"
+        },
+        "b": {
+          "op": "sub",
+          "a": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "div",
+                "a": {
+                  "op": "lit",
+                  "value": 1
+                },
+                "b": {
+                  "op": "pow",
+                  "a": {
+                    "op": "sym",
+                    "name": "canonical:c"
+                  },
+                  "n": 2
+                }
+              },
+              {
+                "op": "derivative",
+                "a": {
+                  "op": "sym",
+                  "name": "canonical:wave_phi"
+                },
+                "coordinate": "T",
+                "order": 2
+              }
+            ]
+          },
+          "b": {
+            "op": "derivative",
+            "a": {
+              "op": "sym",
+              "name": "canonical:wave_phi"
+            },
+            "coordinate": "L",
+            "order": 2
+          }
+        }
+      }
+    },
+    {
+      "record_id": "ME-041",
+      "original_blob_sha": "5e68eec5ebfed0764d0c55404249de082ce02f03",
+      "source_line": 373,
+      "expected_statement": "φ = (1 + √5)/2",
+      "sector": "canonical_constants",
+      "status": "mathematical_constant",
+      "signature": "none",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "symbol φ is golden ratio in this record, not φ in wave equation",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sym",
+          "name": "canonical:golden_phi"
+        },
+        "b": {
+          "op": "div",
+          "a": {
+            "op": "add",
+            "args": [
+              {
+                "op": "lit",
+                "value": 1
+              },
+              {
+                "op": "sqrt",
+                "a": {
+                  "op": "lit",
+                  "value": 5
+                }
+              }
+            ]
+          },
+          "b": {
+            "op": "lit",
+            "value": 2
+          }
+        }
+      }
+    },
+    {
+      "record_id": "ME-042",
+      "original_blob_sha": "5e68eec5ebfed0764d0c55404249de082ce02f03",
+      "source_line": 382,
+      "expected_statement": "Φ₂₃ = φ²³",
+      "sector": "canonical_constants",
+      "status": "mathematical_construct",
+      "signature": "none",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "numerical coefficient, not physical field",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sym",
+          "name": "canonical:Phi23"
+        },
+        "b": {
+          "op": "pow",
+          "a": {
+            "op": "sym",
+            "name": "canonical:golden_phi"
+          },
+          "n": 23
+        }
+      }
+    },
+    {
+      "record_id": "ME-043",
+      "original_blob_sha": "5e68eec5ebfed0764d0c55404249de082ce02f03",
+      "source_line": 391,
+      "expected_statement": "Φ₄₆ = φ⁴⁶ = (φ²³)²",
+      "sector": "canonical_constants",
+      "status": "mathematical_construct",
+      "signature": "none",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "multiple equalities; formal exponent identity not proved",
+      "ast": {
+        "op": "chain",
+        "args": [
+          {
+            "op": "sym",
+            "name": "canonical:Phi46"
+          },
+          {
+            "op": "pow",
+            "a": {
+              "op": "sym",
+              "name": "canonical:golden_phi"
+            },
+            "n": 46
+          },
+          {
+            "op": "pow",
+            "a": {
+              "op": "pow",
+              "a": {
+                "op": "sym",
+                "name": "canonical:golden_phi"
+              },
+              "n": 23
+            },
+            "n": 2
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "ME-044",
+      "original_blob_sha": "5e68eec5ebfed0764d0c55404249de082ce02f03",
+      "source_line": 400,
+      "expected_statement": "V₁₃ = φ¹³",
+      "sector": "canonical_constants",
+      "status": "mathematical_construct",
+      "signature": "none",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "coefficient is not field potential",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sym",
+          "name": "canonical:V13"
+        },
+        "b": {
+          "op": "pow",
+          "a": {
+            "op": "sym",
+            "name": "canonical:golden_phi"
+          },
+          "n": 13
+        }
+      }
+    },
+    {
+      "record_id": "E009-Geometry",
+      "original_blob_sha": "232d48f36da46dc8c0e51096a1b56c56a5c4706f",
+      "source_line": 150,
+      "expected_statement": "noncomputable def proposedRicciScalar (t : ℝ) : ℝ := 4 / (3 * t ^ 2)",
+      "sector": "geometry",
+      "status": "mathematical_profile",
+      "signature": "not_defined",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "proposed scalar-curvature time profile, NOT derived Ricci tensor",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sym",
+          "name": "geometry:proposedRicciScalar"
+        },
+        "b": {
+          "op": "div",
+          "a": {
+            "op": "lit",
+            "value": 4
+          },
+          "b": {
+            "op": "mul",
+            "args": [
+              {
+                "op": "lit",
+                "value": 3
+              },
+              {
+                "op": "pow",
+                "a": {
+                  "op": "sym",
+                  "name": "geometry:t"
+                },
+                "n": 2
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "record_id": "E011-Information_Tensor",
+      "original_blob_sha": "ea589c618d9c6d698bd241110a3e3b756560bd64",
+      "source_line": 24,
+      "expected_statement": "q_dot = p",
+      "sector": "witd_lab",
+      "status": "authored_laboratory_closure",
+      "signature": "(-+++), c=1, 2D lattice",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "dimensionless normalized computational model, field amplitude Q abstract",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "derivative",
+          "a": {
+            "op": "sym",
+            "name": "witd:q"
+          },
+          "coordinate": "T",
+          "order": 1
+        },
+        "b": {
+          "op": "sym",
+          "name": "witd:p"
+        }
+      }
+    },
+    {
+      "record_id": "E013-Information_Tensor",
+      "original_blob_sha": "ea589c618d9c6d698bd241110a3e3b756560bd64",
+      "source_line": 27,
+      "expected_statement": "m_dot = α (q − m)",
+      "sector": "witd_lab",
+      "status": "authored_laboratory_closure",
+      "signature": "(-+++), c=1, 2D lattice",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "relaxation memory not proven fundamental",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "derivative",
+          "a": {
+            "op": "sym",
+            "name": "witd:m"
+          },
+          "coordinate": "T",
+          "order": 1
+        },
+        "b": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "sym",
+              "name": "witd:alpha"
+            },
+            {
+              "op": "sub",
+              "a": {
+                "op": "sym",
+                "name": "witd:q"
+              },
+              "b": {
+                "op": "sym",
+                "name": "witd:m"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "E016-Information_Tensor",
+      "original_blob_sha": "ea589c618d9c6d698bd241110a3e3b756560bd64",
+      "source_line": 69,
+      "expected_statement": "R_ab = beta T_ab[m]",
+      "sector": "witd_lab",
+      "status": "authored_laboratory_closure",
+      "signature": "(-+++), c=1, 2D lattice",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "R_ab is memory residual NOT spacetime Ricci; beta assumed dimensionless",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sym",
+          "name": "witd:R_ab"
+        },
+        "b": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "sym",
+              "name": "witd:beta"
+            },
+            {
+              "op": "sym",
+              "name": "witd:T_ab_m"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "E017-Information_Tensor",
+      "original_blob_sha": "ea589c618d9c6d698bd241110a3e3b756560bd64",
+      "source_line": 72,
+      "expected_statement": "I_ab = T_ab[q] + R_ab",
+      "sector": "witd_lab",
+      "status": "authored_laboratory_closure",
+      "signature": "(-+++), c=1, 2D lattice",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "I_ab is model tensor; no conservation or metric dynamics asserted",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sym",
+          "name": "witd:I_ab"
+        },
+        "b": {
+          "op": "add",
+          "args": [
+            {
+              "op": "sym",
+              "name": "witd:T_ab_q"
+            },
+            {
+              "op": "sym",
+              "name": "witd:R_ab"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "E023-EFMW_Lagrangian",
+      "original_blob_sha": "916e04935f50cbbf07ddcd81e7c71a02954b1c96",
+      "source_line": 28,
+      "expected_statement": "$$\\Box_g\\varphi_a-\\mathcal U_{,a}=0.$$",
+      "sector": "c1_candidate",
+      "status": "conditional_candidate",
+      "signature": "(-+++), natural units",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "spatial second derivative used as DIMENSIONAL PROXY for □; NOT a formal covariant operator translation",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sub",
+          "a": {
+            "op": "derivative",
+            "a": {
+              "op": "sym",
+              "name": "c1:varphi_a"
+            },
+            "coordinate": "L",
+            "order": 2
+          },
+          "b": {
+            "op": "sym",
+            "name": "c1:U_deriv_a"
+          }
+        },
+        "b": {
+          "op": "zero"
+        }
+      }
+    },
+    {
+      "record_id": "E025-EFMW_Lagrangian",
+      "original_blob_sha": "916e04935f50cbbf07ddcd81e7c71a02954b1c96",
+      "source_line": 36,
+      "expected_statement": "$$M_{\\rm Pl}^2(G_{\\mu\\nu}+\\Lambda g_{\\mu\\nu})=T^{(0)}_{\\mu\\nu}+T^{(U)}_{\\mu\\nu},$$",
+      "sector": "c1_candidate",
+      "status": "conditional_candidate",
+      "signature": "(-+++), natural units",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "metric field equation typed; mixed stress derivation still open",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "sym",
+              "name": "c1:Mpl2"
+            },
+            {
+              "op": "add",
+              "args": [
+                {
+                  "op": "sym",
+                  "name": "c1:G_munu"
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "sym",
+                      "name": "c1:Lambda"
+                    },
+                    {
+                      "op": "sym",
+                      "name": "c1:g_munu"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "b": {
+          "op": "add",
+          "args": [
+            {
+              "op": "sym",
+              "name": "c1:T0_munu"
+            },
+            {
+              "op": "sym",
+              "name": "c1:TU_munu"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "E029-Standard_Model_Reduction",
+      "original_blob_sha": "c88257811c598708ac68cc77cd6b402d036a0671",
+      "source_line": 95,
+      "expected_statement": "m_h^2=2\\lambda v^2,\\qquad",
+      "sector": "classical_sm",
+      "status": "established_reference_identity",
+      "signature": "(+---), natural units",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "tree-level Higgs mass relation; source fragment includes trailing punctuation",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "pow",
+          "a": {
+            "op": "sym",
+            "name": "sm:mh"
+          },
+          "n": 2
+        },
+        "b": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "lit",
+              "value": 2
+            },
+            {
+              "op": "sym",
+              "name": "sm:lambda"
+            },
+            {
+              "op": "pow",
+              "a": {
+                "op": "sym",
+                "name": "sm:v"
+              },
+              "n": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "E030-Standard_Model_Reduction",
+      "original_blob_sha": "c88257811c598708ac68cc77cd6b402d036a0671",
+      "source_line": 117,
+      "expected_statement": "SU(3)^2 U(1):&\\quad 2Y_Q-Y_u-Y_d=0,\\\\",
+      "sector": "classical_sm",
+      "status": "established_reference_identity",
+      "signature": "(+---), natural units",
+      "confidence": "reviewed_manual_skeleton",
+      "limitations": "one SU(3)^2U(1) anomaly sum; full anomaly freedom not inferred",
+      "ast": {
+        "op": "eq",
+        "a": {
+          "op": "sub",
+          "a": {
+            "op": "sub",
+            "a": {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "lit",
+                  "value": 2
+                },
+                {
+                  "op": "sym",
+                  "name": "sm:YQ"
+                }
+              ]
+            },
+            "b": {
+              "op": "sym",
+              "name": "sm:Yu"
+            }
+          },
+          "b": {
+            "op": "sym",
+            "name": "sm:Yd"
+          }
+        },
+        "b": {
+          "op": "zero"
+        }
+      }
+    }
+  ]
+}
