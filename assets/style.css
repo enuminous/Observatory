@@ -316,3 +316,14 @@ input[type=search]::placeholder{color:#729294}
 .obligation.priority{border-color:#438578}
 .obligation.priority .ob-id{color:var(--teal)}
 @media(max-width:580px){.stat-tile-evidence strong{font-size:35px}.queue-intro{padding-left:9px}}
+
+/* Immutable source-head provenance addendum; original gate counts unchanged */
+.source-freeze-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:25px 27px;margin-bottom:22px;border:1px solid #468d7a;background:linear-gradient(115deg,rgba(30,79,73,.32),rgba(10,30,35,.85))}
+.source-freeze-panel h3{font-size:24px;letter-spacing:-.035em;font-weight:500;margin:5px 0}
+.source-freeze-panel p:not(.eyebrow){font-size:12px;color:#b2c9c5;line-height:1.7;margin:8px 0 0}
+.source-freeze-panel strong{font-weight:650;color:#c7ffde}
+.source-freeze-panel em{font-style:normal;color:#f5bc81}
+.source-freeze-panel .btn{flex-shrink:0}
+.source-card p.source-commit{font:10px var(--mono);color:#9ecfc1;overflow-wrap:anywhere}
+.source-card p.source-commit a{font:10px var(--mono);color:var(--teal)}
+@media(max-width:860px){.source-freeze-panel{flex-direction:column;align-items:stretch}}

@@ -124,13 +124,15 @@ function renderSources(){
   const ordered=[...state.data.sources].sort((a,b)=>Number(b.inspection.startsWith('README'))-Number(a.inspection.startsWith('README')));
   for(const s of ordered){
     const inspected=s.inspection.startsWith('README');
+    const pinnedCommit=state.data.phase_1_source_freeze?.priority_repo_commits?.[s.repository];
     const card=add(grid,'article',{class:'source-card'});
-    const head=add(card,'div',{class:'source-row'});add(head,'span',{class:'eyebrow'},s.id);add(head,'span',{class:'status-chip '+(inspected?'established':'placeholder')},inspected?'README INSPECTED':'QUEUED');
+    const head=add(card,'div',{class:'source-row'});add(head,'span',{class:'eyebrow'},s.id);add(head,'span',{class:'status-chip '+(pinnedCommit?'established':'placeholder')},pinnedCommit?'PHASE 1 PINNED':inspected?'README INSPECTED':'QUEUED');
     add(card,'h3',{},s.repository);add(card,'p',{},s.inspection);
+    if(pinnedCommit){const p=add(card,'p',{class:'source-commit'});add(p,'span',{},'Pinned commit: ');const link=add(p,'a',{href:'https://github.com/'+s.repository+'/commit/'+pinnedCommit,target:'_blank',rel:'noopener noreferrer'},pinnedCommit.slice(0,12));link.setAttribute('aria-label','View frozen commit for '+s.repository);}
     const foot=add(card,'div',{class:'source-row'});
     const a=add(foot,'a',{href:s.url,target:'_blank',rel:'noopener noreferrer'},'Inspect source ↗');
     a.setAttribute('aria-label','Inspect '+s.repository+' on GitHub');
-    add(foot,'span',{class:'pin'},'UNPINNED');
+    add(foot,'span',{class:'pin'},pinnedCommit?'PINNED AFTER SNAPSHOT':'UNPINNED');
   }
 }
 

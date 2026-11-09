@@ -62,3 +62,20 @@ test('source pinning is first and remains unresolved',()=>{
   assert.match(html,/SOURCE PINS FIRST/);
   assert.match(html,/ob_pin_sources/);
 });
+
+test('post-snapshot source freeze is separately traced without rewriting older gates',()=>{
+  const p=d.phase_1_source_freeze;
+  assert.equal(p.status,'BOUNDED_SOURCE_PROVENANCE_PASS');
+  assert.equal(p.priority_repo_count,4);
+  assert.equal(p.priority_git_blobs,209);
+  assert.equal(p.fieldspace_lines_verified,585);
+  assert.equal(p.canonical_full_formula_blocks_verified,102);
+  assert.equal(p.source_equation_ledger_records,717);
+  assert.equal(p.upstream_blob_matches,4);
+  assert.equal(p.independent_fresh_replay,'UNRESOLVED');
+  assert.equal(Object.keys(p.priority_repo_commits).length,4);
+  assert.ok(d.sources.every(s=>s.pinned===false),'historical source state must not be silently changed');
+  assert.equal(d.counts.PASS,5);
+  assert.equal(d.counts.UNRESOLVED,35);
+  assert.match(get('index.html'),/Four priority repositories, source-frozen/);
+});

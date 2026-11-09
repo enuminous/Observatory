@@ -70,3 +70,10 @@ GitHub Actions checks syntax and data invariants before attempting deployment. T
 ## Publication and reuse
 
 AI-assisted implementation. Publication of this research site does not imply peer review or transfer ownership of the upstream scientific work. No new open-source redistribution license is asserted here.
+
+
+## UNITY-001 Phase 1 source-provenance addendum — 9 November 2026
+
+The [published Phase 1 report](https://github.com/enuminous/papers/blob/main/research/unity-001/phase-1/PHASE1_REPORT.md) freezes all four priority repository commits and 209 Git-tracked blob objects. Three additional original upstream commits are pinned; 4/4 archived upstream blob IDs match, 585/585 FieldSpace source statements match their original lines, and all 102 canonical formula blocks match across archival representations. The [full 717-record extraction ledger](https://github.com/enuminous/papers/blob/main/research/unity-001/phase-1/source-equations.csv) preserves source statements and candidate-audit statuses separately.
+
+**Versioning rule:** these provenance observations postdate the original 8 November MOC-001 static snapshot. Its five PASS and 35 UNRESOLVED *structural* findings have **not** been recomputed or silently promoted. The broader all-sector source-pinning obligation, independently replayed proofs, typed compilation, and physical unification remain open.

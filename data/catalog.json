@@ -952,5 +952,28 @@
     "registry_pass_findings": 1,
     "efmw_specific_pass": 0,
     "note": "Five PASS findings are out of 40 gate findings, not five verified equations out of 22. Four of 22 equation records pass only dimensional checks (two established references and two illustrative expressions), plus one registry-static PASS. None proves or verifies an EFMW-specific physical equation."
+  },
+  "phase_1_source_freeze": {
+    "date": "2026-11-09",
+    "status": "BOUNDED_SOURCE_PROVENANCE_PASS",
+    "priority_repo_commits": {
+      "enuminous/Geometry": "285b95551ca11c487eb6c0c13f8dde86b702df71",
+      "enuminous/Information-Tensor": "b02b04897743d34cdb846e9fac2518cd8faa4399",
+      "enuminous/EFMW-Lagrangian": "83f9d2ec03e055c6cd09aa6359189161ad1571f6",
+      "enuminous/Standard-Model-Reduction": "aa569b13a594735774c7b643d44aebff4d5ad17c"
+    },
+    "priority_repo_count": 4,
+    "priority_git_blobs": 209,
+    "upstream_source_repos_pinned": 3,
+    "upstream_blob_matches": 4,
+    "fieldspace_lines_verified": 585,
+    "canonical_full_formula_blocks_verified": 102,
+    "source_equation_ledger_records": 717,
+    "proof_or_empirical_validation": "UNRESOLVED",
+    "independent_fresh_replay": "UNRESOLVED",
+    "report_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-1/PHASE1_REPORT.md",
+    "lock_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-1/sources.lock.json",
+    "ledger_url": "https://github.com/enuminous/papers/blob/main/research/unity-001/phase-1/source-equations.csv",
+    "evidence_boundary": "Phase 1 provenance results were added after the original 2026-11-08 snapshot. The 5/40 historical structural gates and 35 unresolved findings are preserved unchanged; this does not close all-source ob_pin_sources or validate physics."
   }
 }
