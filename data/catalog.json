@@ -1093,5 +1093,17 @@
     "report_url": "https://github.com/enuminous/papers/blob/main/research/ist-001/IST001_REPORT.md",
     "ci_url": "https://github.com/enuminous/papers/actions/runs/42669567461",
     "boundary": "Separate bounded mathematical control results; no EFMW-specific physical experiment or proof of full WITD dynamics; original MOC-001 and Phase 5 scores unchanged."
+  },
+  "ist_fam_001": {
+    "date": "2026-11-09",
+    "status": "NO_SOURCE_SUPPORT_BOUNDED_STOP",
+    "records_screened": 717,
+    "hypotheses": {
+      "H1": "NO_SOURCE_SUPPORT",
+      "H2": "NO_SOURCE_SUPPORT"
+    },
+    "protocol_url": "https://github.com/enuminous/papers/blob/cc04b04b953a14aefb2bf2f58041e99b4820a1ab/research/ist-fam-001/PROTOCOL.json",
+    "report_url": "https://github.com/enuminous/papers/blob/cc04b04b953a14aefb2bf2f58041e99b4820a1ab/research/ist-fam-001/AUDIT_REPORT.md",
+    "receipt_url": "https://github.com/enuminous/papers/blob/cc04b04b953a14aefb2bf2f58041e99b4820a1ab/research/ist-fam-001/EXECUTION.json"
   }
 }

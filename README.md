@@ -46,7 +46,7 @@ The site needs no package installation, external JavaScript, login, fonts, API k
 | Upstream original source equations | Not fully imported | Current browser registry is a curated snapshot |
 | External physical experiment | None | No unified physical mechanism established |
 
-**Next required action is `ob_pin_sources` (priority 01):** freeze exact commits and original file hashes before importing equations or resolving interfaces. The queue opens on this obligation.
+**Original 8 November snapshot, priority 01 — `ob_pin_sources`:** freeze exact commits and file hashes before importing equations. The [subsequent Phase 1 report](#unity-001-phase-1-source-provenance-addendum--9-november-2026) records four priority source pins. Broader source coverage remains open.
 
 The four README-inspected sources are Geometry, Information-Tensor, EFMW-Lagrangian, and Standard-Model-Reduction. The other eight source URLs are queued, not ingested. No source commit is frozen in this browser snapshot.
 
@@ -105,3 +105,7 @@ The [executed Phase 5 audit](https://github.com/enuminous/papers/blob/main/resea
 The [published IST-001 executed audit](https://github.com/enuminous/papers/blob/main/research/ist-001/IST001_REPORT.md) verifies a bounded covariant scalar-memory Hilbert tensor and its exchange with an ordinary scalar, plus a reversible finite harmonic-reservoir control that produces a memory kernel in a manufactured homogeneous check. [GitHub CI](https://github.com/enuminous/papers/actions/runs/42669567461) reports **24/24 tests PASS** and **6/8 narrowly defined mathematical gates PASS**, 2 UNRESOLVED. The Markov first-order relaxation is a separately *assumed* approximation; no finite-bath irreversible limit was derived.
 
 **IST-001 does not resolve physical uniqueness of the information stress, the WITD source correspondence, or Phase 5 physical readiness.** The initial MOC-001 snapshot and all earlier experimental/unresolved counts remain unchanged.
+
+## IST-FAM-001 source-support decision — 9 November 2026
+
+The [frozen protocol](https://github.com/enuminous/papers/blob/cc04b04b953a14aefb2bf2f58041e99b4820a1ab/research/ist-fam-001/PROTOCOL.json) tests two proposed links from source equations to a physical spectral model. The [executed audit](https://github.com/enuminous/papers/blob/cc04b04b953a14aefb2bf2f58041e99b4820a1ab/research/ist-fam-001/AUDIT_REPORT.md) screened 717 records and found **NO SOURCE SUPPORT** for either hypothesis under the frozen mapping rules. The [execution receipt](https://github.com/enuminous/papers/blob/cc04b04b953a14aefb2bf2f58041e99b4820a1ab/research/ist-fam-001/EXECUTION.json) records the source ledger and bounded stop decision. The historical Observatory scorecard and open physical interfaces retain their original status.
