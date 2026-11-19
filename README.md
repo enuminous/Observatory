@@ -98,7 +98,7 @@ The [published Phase 4 executed report](https://github.com/enuminous/papers/blob
 
 The [executed Phase 5 audit](https://github.com/enuminous/papers/blob/main/research/unity-001/phase-5/PHASE5_REPORT.md) and [pre-execution frozen simulation protocol](https://github.com/enuminous/papers/blob/main/research/unity-001/phase-5/PROTOCOL.json) examine a hypothetical informational gravitational source. They report **4/11 bounded PASS, 1/11 counterexample FAIL, 6/11 UNRESOLVED**, with **25/25 Python tests passed** in [CI](https://github.com/enuminous/papers/actions/runs/42633977283). The signal is exactly confounded by an unconstrained conventional co-located mass profile; nearly confounded alternatives worsen hypothetical sensitivity by **567.2×**. These are deliberately dimensionless synthetic scenarios—not real observations, EFMW-specific predictions or empirical significance.
 
-**Physical disposition: NOT READY FOR CONFIRMATORY PHYSICAL PREDICTION.** The original MOC-001 5/40 scorecard, four unresolved bridge sockets and prior phase results are preserved unchanged.
+**Physical disposition: NOT READY FOR CONFIRMATORY PHYSICAL PREDICTION.** The [November 16 stationary source screen](https://github.com/enuminous/papers/blob/main/research/unity-001/source-screen/README.md) follows Phase 5. Under the isolated static assumptions, the minimally coupled free scalar has only the zero solution and shares its stress and equations with conventional Einstein–Klein–Gordon theory. The original MOC-001 5/40 scorecard, four unresolved bridge sockets and prior phase results are preserved unchanged.
 
 ## IST-001 mathematical memory-stress control — 9 November 2026
 
